@@ -40,17 +40,12 @@
     },
     {
       "type": "category",
-      "label": "Customizing",
+      "label": "Webhooks",
       "items": [
         {
           "type": "doc",
-          "id": "customizing/customize-with-json-file",
-          "label": "Customize with json file"
-        },
-        {
-          "type": "doc",
-          "id": "customizing/customize-through-platform",
-          "label": "Customize through platform"
+          "id": "Webhooks/webhook",
+          "label": "Webhook"
         }
       ]
     }
