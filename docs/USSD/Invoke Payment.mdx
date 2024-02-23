@@ -1,7 +1,7 @@
 # Invoke Payment
 
 <Note title="INFO">
-Refer to the Get bank list [**Configuration**](../USSD/Get bank list.mdx) to get unique USSD bank codes.
+Refer to Get bank list on how to get unique USSD bank codes.
 </Note>
 
 
@@ -15,9 +15,14 @@ This endpoint facilitates the initiation of a payment. It represents the second 
 
 ## Parameters:
 
-###### bankCode (string): ```This is the code of the bank chosen by your customer returned from the bank list endpoint.```
-###### amount (string): ```This is the amount your customer wants to fund or pay.```
-###### clientReference (string): ```An identifier supplied by you to be used to identify the transaction. This is the unique Id for the customer                                       dialing the USSD code. e.g: user ID, account number, etc.```
+###### bankCode (string): 
+This is the code of the bank chosen by your customer returned from the bank list endpoint.
+
+###### amount (string): 
+This is the amount your customer wants to fund or pay.
+
+###### clientReference (string): 
+An identifier supplied by you to be used to identify the transaction. This is the unique Id for the customer                                       dialing the USSD code. e.g: user ID, account number, etc.
 
 
 <Note title="INFO">
@@ -37,13 +42,6 @@ This endpoint requires a POST request to be sent to the specified URL with the n
 
 ```
 
-```markdown
-| Fields | Description  |
-| ----- | ------------ |
-| bankCode | This is the code of the bank chosen by your customer from the bank list endpoint. |
-| amount | This is the amount your customer wants to fund or pay. |
-| clientReference | An identifier supplied by you to be used to identify the transaction. This is the unique Id for the customer dialing the USSD code. e.g: user ID, account number, etc. |
-```
 
 <CodeGroup>
 
@@ -65,18 +63,24 @@ This endpoint requires a POST request to be sent to the specified URL with the n
 
 ```
 </CodeGroup>
+###### Reference (string): 
+This is the reference combined with the bank ussd code to complete the ussd string and is usually valid for 5mins. e.g ```*737*000*9683#```
 
+###### amount (string): 
+Amount of the transaction
 
-```markdown
-| Fields | Description  |
-| ----- | ------------ |
-| Reference |This is the reference combined with the bank ussd code to complete the ussd string and is usually valid for 5mins. e.g "*737*000*9683 |
-| Amount | Amount of the transaction |
-| TransactionId | The unique id of the transaction you invoked |
-| TraceId | A unique trace id of the transaction you invoked and can be used to investigate transaction. |
-| UssdString | The USSD code that'll be displayed to your customer and dialed to make payment/fund account. |
-| TimeStamp | The date and time of the transaction. |
-```
+###### TransactionId (string): 
+The unique id of the transaction you invoked
+
+###### TraceId (string): 
+A unique trace id of the transaction you invoked and can be used to investigate transaction.
+
+###### UssdString (string): 
+The USSD code that'll be displayed to your customer and dialed to make payment/fund account.
+
+###### TimeStamp (string): 
+The date and time of the transaction.
+
 
 
 
