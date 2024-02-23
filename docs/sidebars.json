@@ -29,16 +29,16 @@
     },
     {
       "type": "category",
-      "label": "Editing docs",
+      "label": "USSD",
       "items": [
         {
           "type": "doc",
-          "id": "editing-docs/manange-your-docs",
+          "id": "USSD/manange-your-docs",
           "label": "Manange your docs"
         },
         {
           "type": "doc",
-          "id": "editing-docs/get-bank-list",
+          "id": "USSD/get-bank-list",
           "label": "Get bank list.mdx"
         }
       ]
