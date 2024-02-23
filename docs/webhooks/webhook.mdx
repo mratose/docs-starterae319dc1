@@ -13,10 +13,19 @@ Here's an example:
 
 <CodeGroup>
 
-```json docuo.config
+```webhook structure
+
 {
-  "title": "Your site title",
-  "favicon": "Your site favicon"
+    "status": true,
+    "message": "payment invoked successfully",
+    "data": {
+        "Reference": "9748",
+        "Amount": "1000",
+        "TransactionId": "23102315912454509748",
+        "TraceId": "F90UA2J77K35169",
+        "UssdString": "*737*000*9748#",
+        "TimeStamp": "2023-10-23 11:45:45"
+    }
 }
 ```
 
