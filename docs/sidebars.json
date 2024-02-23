@@ -24,16 +24,6 @@
           "type": "doc",
           "id": "getting-started/quickstart",
           "label": "Quickstart"
-        },
-        {
-          "type": "doc",
-          "id": "getting-started/set-up-your-first-project",
-          "label": "Set up your first project"
-        },
-        {
-          "type": "doc",
-          "id": "getting-started/configuration",
-          "label": "Configuration"
         }
       ]
     },
@@ -48,8 +38,8 @@
         },
         {
           "type": "doc",
-          "id": "editing-docs/docs-components",
-          "label": "Docs components"
+          "id": "editing-docs/get-bank-list",
+          "label": "Get bank list.mdx"
         }
       ]
     },
