@@ -33,13 +33,13 @@
       "items": [
         {
           "type": "doc",
-          "id": "USSD/manange-your-docs",
-          "label": "Manange your docs"
+          "id": "USSD/get-bank-list",
+          "label": "Get bank list"
         },
         {
           "type": "doc",
-          "id": "USSD/get-bank-list",
-          "label": "Get bank list.mdx"
+          "id": "USSD/manange-your-docs",
+          "label": "Manange your docs"
         }
       ]
     },
