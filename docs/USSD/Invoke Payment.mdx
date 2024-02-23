@@ -4,18 +4,29 @@
 Refer to the Get bank list [**Configuration**](../USSD/Get bank list.mdx) to get unique USSD bank codes.
 </Note>
 
+
 ## Overview
 
-This endpoint allows you to initiate a payment. This is the second call required and will be expecting the bank code (string), amount (string) and client reference (string).
+This endpoint facilitates the initiation of a payment. It represents the second step in the payment process and expects specific parameters: bank code (string), amount (string), and client reference (string).
 
 ## Request
-###### Method: 
-            ```POST```
-###### URL: 
-            ```[API Base URL]/payments/ussd/invokePayment```
+###### Method: ```POST```
+###### URL:  ```[API Base URL]/payments/ussd/invokePayment```
+
+## Parameters:
+
+###### bankCode (string): ```This is the code of the bank chosen by your customer returned from the bank list endpoint.```
+###### amount (string): ```This is the amount your customer wants to fund or pay.```
+###### clientReference (string): ```An identifier supplied by you to be used to identify the transaction. This is the unique Id for the customer                                       dialing the USSD code. e.g: user ID, account number, etc.```
 
 
-###### Payload :
+<Note title="INFO">
+By utilizing this endpoint, clients can seamlessly initiate payments via the USSD service, ensuring a smooth payment experience.
+</Note>
+
+This endpoint requires a POST request to be sent to the specified URL with the necessary parameters included in the request body.
+
+###### Request body :
 
 ```
 {
