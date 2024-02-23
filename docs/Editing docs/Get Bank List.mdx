@@ -6,3 +6,41 @@ This endpoint allows you to retrieve a list of banks. This is the first call req
 
 
 
+### Request
+### Method: GET
+URL: ````markdown
+      ```[API Base URL]/payments/ussd/getBankList```
+Headers: ````markdown
+          ```x-api-key: [API Key] ```
+
+
+### Response
+Success: ```200 OK```
+
+### Example Response Body:
+```
+````markdown
+{
+    "status": true,
+    "message": "bank list fetched successfully",
+    "data": [
+        {
+            "BankName": "First Bank of Nigeria",
+            "BankCode": "894",
+        },
+        {
+            "BankName": "Guaranted Trust Bank",
+            "BankCode": "737",
+        },
+        {
+            "BankName": "Access Bank",
+            "BankCode": "901",
+        },
+        {
+            "BankName": "Zenith Bank",
+            "BankCode": "966",
+        }
+    ]
+}
+```
+
