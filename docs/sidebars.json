@@ -35,6 +35,11 @@
           "type": "doc",
           "id": "USSD/get-bank-list",
           "label": "Get bank list"
+        },
+        {
+          "type": "doc",
+          "id": "USSD/invoke-payment",
+          "label": "Invoke Payment"
         }
       ]
     },
