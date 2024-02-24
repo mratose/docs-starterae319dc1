@@ -18,8 +18,8 @@
       "iconRedirectUrl": "https://business.loosechange.app"
     },
     "footer": {
-      "logo": "image/logo.png",
-      "caption": "My project",
+      "logo": "image/loosechange-logo-appstore.png",
+      "caption": "Loosechange",
       "links": [
         {
           "title": "Product",
