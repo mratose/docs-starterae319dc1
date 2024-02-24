@@ -12,7 +12,7 @@ Here's an example:
 
 <CodeGroup>
 
-```USSD webhook structure
+```json webhook structure
 
 {
   "TraceId": "A58A93E9BNY745G",
@@ -60,10 +60,14 @@ The date and time when the payment transaction was initiated.
 
 ### Usage Instructions:
 
-###### - Receive Webhook: Configure your server to listen for incoming webhook notifications at the specified URL provided by the payment service.
+###### - Receive Webhook: 
+Configure your server to listen for incoming webhook notifications at the specified URL you have provided in the settings tab of the dashboard. [Please see getting started for more information] ->  (https://loosechange.spreading.io/getting-started/quickstart#webhook-url) 
 
-###### - Parse Payload: Upon receiving a webhook notification, parse the JSON payload to extract relevant information about the payment transaction.
+###### - Parse Payload: 
+Upon receiving a webhook notification, parse the JSON payload to extract relevant information about the payment transaction.
 
-###### - Handle Payment: Utilize the extracted information to update your system/database accordingly, acknowledging the successful payment initiation.
+###### - Handle Payment: 
+Utilize the extracted information to update your system/database accordingly, acknowledging the successful payment initiation.
 
-###### - Feedback to User: If applicable, provide feedback to the user confirming the successful initiation of the payment, including details such as reference code and USSD string.
+###### - Feedback to User: 
+If applicable, provide feedback to the user confirming the successful initiation of the payment, including details such as reference code and USSD string.
