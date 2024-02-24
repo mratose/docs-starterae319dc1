@@ -1,0 +1,69 @@
+# Customize with json file
+
+<Note title="INFO">
+This webhook is delivered upon successful payment initiation when customer dials generated USSD string. Please refer to invokePayment docs.
+</Note>
+
+## Overview
+
+Upon successful payment initiation, the webhook delivers a payload structured as follows:
+
+Here's an example:
+
+<CodeGroup>
+
+```USSD webhook structure
+
+{
+  "TraceId": "A58A93E9BNY745G",
+  "TransactionId": "24021326003380602723",
+  "walletId": "a4cce42c-de5c-4586-9334-d63b2b4fd6b2",
+  "client_reference": "08097926728",
+  "Amount": 8.5,
+  "ResponseCode": "00",
+  "ResponseMessage": "Success"
+}
+```
+
+</CodeGroup>
+
+### Fields Description:
+
+###### - status (boolean): 
+Indicates the status of the payment invocation. A value of true denotes a successful invocation.
+
+###### - message (string): 
+Provides a descriptive message regarding the outcome of the payment invocation.
+
+###### - data (object): 
+Contains detailed information about the payment transaction.
+
+###### - Reference (string): 
+The reference code combined with the bank USSD code to complete the USSD string. This reference is typically valid for a limited duration.
+
+###### - Amount (string): 
+The amount of the transaction.
+
+###### - TransactionId (string): 
+A unique identifier assigned to the payment transaction.
+
+###### - TraceId (string): 
+A unique trace identifier associated with the payment transaction, useful for tracking and auditing purposes.
+
+###### - UssdString (string): 
+The USSD code that should be displayed to the customer and dialed to complete the payment or transaction.
+
+###### - TimeStamp (string): 
+The date and time when the payment transaction was initiated.
+
+
+
+### Usage Instructions:
+
+###### - Receive Webhook: Configure your server to listen for incoming webhook notifications at the specified URL provided by the payment service.
+
+###### - Parse Payload: Upon receiving a webhook notification, parse the JSON payload to extract relevant information about the payment transaction.
+
+###### - Handle Payment: Utilize the extracted information to update your system/database accordingly, acknowledging the successful payment initiation.
+
+###### - Feedback to User: If applicable, provide feedback to the user confirming the successful initiation of the payment, including details such as reference code and USSD string.
