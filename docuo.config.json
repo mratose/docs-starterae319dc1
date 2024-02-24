@@ -1,5 +1,5 @@
 {
-  "title": "My site",
+  "title": "Loosechange developer",
   "favicon": "https://media-resource.spreading.io/docuo/workspace146/9980cecd4900579132e780e0dd295e05/favicon.ico",
   "themeConfig": {
     "navbar": {
@@ -34,19 +34,15 @@
       "socials": [
         {
           "logo": "Twitter",
-          "href": "https://twitter.com/docuo_team"
+          "href": "https://twitter.com/goloosechange"
         },
         {
           "logo": "LinkedIn",
-          "href": "https://www.linkedin.com/company/spreadingai"
+          "href": "https://www.linkedin.com/company/getloosechange"
         },
         {
-          "logo": "Discord",
-          "href": "https://discord.gg/pgJFhUwzAU"
-        },
-        {
-          "logo": "GitHub",
-          "href": "https://github.com/spreadingai"
+          "logo": "Instagram",
+          "href": "https://instagram.com/goloosechabge"
         }
       ]
     }
