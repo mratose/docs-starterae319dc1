@@ -13,19 +13,19 @@ This endpoint facilitates the initiation of a payment. It represents the second 
 ###### Method: ```POST```
 ###### URL:  ```[API Base URL]/payments/ussd/invokePayment```
 
-## Parameters:
-```markdown
 
-###### -  bankCode (string): 
+## Parameters:
+
+-  bankCode (string): 
 This is the code of the bank chosen by your customer returned from the bank list endpoint.
 
-###### -  amount (string): 
+-  amount (string): 
 This is the amount your customer wants to fund or pay.
 
-######  - clientReference (string): 
+- clientReference (string): 
 An identifier supplied by you to be used to identify the transaction. This is the unique Id for the customer                                       dialing the USSD code. e.g: user ID, account number, etc.
 
-```
+
 <Note title="INFO">
 By utilizing this endpoint, clients can seamlessly initiate payments via the USSD service, ensuring a smooth payment experience.
 </Note>
