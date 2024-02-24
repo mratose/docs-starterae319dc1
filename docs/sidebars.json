@@ -44,8 +44,8 @@
       "items": [
         {
           "type": "doc",
-          "id": "Webhooks/webhook",
-          "label": "Webhook"
+          "id": "Webhooks/USSD",
+          "label": "USSD"
         }
       ]
     }
